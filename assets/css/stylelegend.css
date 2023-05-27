@@ -1,0 +1,513 @@
+body{
+    font-family: 'Cuprum', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../Asset/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    line-height: 1.5;
+    box-sizing: border-box;
+  }
+
+  .top-container{
+    max-width: 1000px;
+    margin: auto;
+  }
+  a{
+    text-decoration: none;
+  }
+  ul{
+    list-style: none;
+  }
+  .top{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .justify{
+    justify-content: space-between;
+  }
+  .align{
+    align-items: center;
+  }
+  .banner-top{
+    padding: 12px 0;
+    background-color: black;
+    position: relative;
+  }
+
+  .banner-top .div-logo img{
+    padding: 0 10px;
+    width: 50%;
+    height: 50%;
+  }
+  .banner-top .nav-bar{
+    padding: 0 15px;
+  }
+
+  .banner-top .nav-bar ul li a{
+    display: block;
+    font-size: 25px;
+    padding: 10px 0;
+    color: white;
+  }
+
+  .banner-top .nav-bar ul li {
+    display: inline-block;
+    margin-left: 40px;
+  }
+
+  .banner-top .nav-bar ul li a:hover{
+    color:red;
+  }
+  .banner-top .nav-bar ul li a.active{
+    color:red;
+  }
+
+  .banner-top #butt-1{
+    opacity: 0;
+    position: absolute;
+  }
+
+  .toggle{
+    background-color: lightgrey;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    margin-left: 15px;
+    justify-content: center;
+    height: 40px;
+    width: 45px;
+  }
+
+  .toggle span{
+    position: relative;
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: black;
+
+  }
+
+  .toggle span::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top:5px;
+  }
+
+  .toggle span::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top:-5px;
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+  .column{
+    float:left;
+    width: 33.33%;
+    padding: 5px;
+
+  }
+
+  .column1{
+    float:left;
+    width: 33.33%;
+    padding: 5px;
+
+  }
+
+  .row::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .loba{
+    position: relative;
+    display: inline-block;
+    margin-left: 80px;
+    width: 430px;
+    height:500px;
+    padding: 20px;
+
+
+  }
+
+  .loba-top{
+    display:none;
+    position: absolute;
+    width: 430px;
+    height:500px;
+    padding: 20px;
+    top: 118px;
+    left: 85px;;
+    z-index: 99;
+    transition: ease-out;
+  }
+
+  .column:hover .loba-top{
+    display: inline;
+  }
+
+  .ash{
+    margin-left: 60px;
+    width: 430px;
+    height:500px;
+    padding: 20px;
+  }
+
+  .ash-top{
+    display:none;
+    position: absolute;
+    width: 430px;
+    height:500px;
+    padding: 20px;
+    top: 118px;
+    left: 570px;
+    z-index: 99;
+    transition: ease;
+  }
+
+  .column:hover .ash-top{
+    display: inline;
+  }
+
+  .wraith{
+    margin-left: 30px;
+    width: 430px;
+    height:500px;
+    padding: 20px;
+  }
+
+  .wraith-top{
+    display:none;
+    position: absolute;
+    width: 430px;
+    height:500px;
+    padding: 20px;
+    top: 118px;
+    left: 1050px;
+    z-index: 99;
+    transition: ease;
+  }
+
+  .column:hover .wraith-top{
+    display: inline;
+  }
+
+  .pathfinder{
+    margin-left: 80px;
+    width: 430px;
+    height:500px;
+    padding: 20px;
+  }
+
+  .pathfinder-top{
+    display:none;
+    position: absolute;
+    width: 430px;
+    height:500px;
+    padding: 20px;
+    top: 635px;
+    left: 85px;;
+    z-index: 99;
+    transition: ease-in;
+    transition-delay: 300ms;
+  }
+
+  .column:hover .pathfinder-top{
+    display: inline;
+  }
+
+  .lifeline{
+    margin-left: 30px;
+    width: 430px;
+    height:500px;
+    padding: 20px;
+  }
+
+  .lifeline-top{
+    display:none;
+    position: absolute;
+    width: 430px;
+    height:500px;
+    padding: 20px;
+    top: 635px;
+    left: 1050px;
+    z-index: 99;
+    transition: ease;
+  }
+
+  .column:hover .lifeline-top{
+    display: inline;
+  }
+
+  .crypto{
+    margin-left: 60px;
+    width: 430px;
+    height:500px;
+    padding: 20px;
+  }
+
+  .crypto-top{
+    display:none;
+    position: absolute;
+    width: 430px;
+    height:500px;
+    padding: 20px;
+    top: 635px;
+    left: 570px;
+    z-index: 99;
+    transition: ease;
+  }
+
+  .column:hover .crypto-top{
+    display: inline;
+  }
+
+  .web-footer{
+    max-width: 100%;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+  }
+  .icons{
+    height: 50px;
+    width: 50px;
+    padding: 15px 25px 5px 25px;
+  }
+  .icon{
+    height: 70px;
+    width: 70px;
+    position: relative;
+    left: 1350px;
+    top: -70px;
+  }
+  .copy{
+    font-size: 25px;
+  }
+
+
+
+  @media(max-width: 800px){
+      .toggle{
+          display: flex;
+      }
+      .banner-top .nav-bar{
+          position: absolute;
+        max-width: 100%;
+          right:0;
+          top:100%;
+          background-color: black;
+        visibility: hidden;
+          opacity:0;
+      }
+      .banner-top .nav-bar ul li{
+          display: block;
+          margin:0;
+      }
+      .banner-top #butt-1:checked ~ .nav-bar{
+         opacity: 1;
+         visibility: visible;
+         z-index: 2;
+      }
+      .banner-top #butt-1:focus ~ .toggle{
+          box-shadow: 0 0 15px black;
+      }
+      .banner-top #butt-1:checked ~ .toggle span{
+          background-color: transparent;
+      }
+      .banner-top #butt-1:checked ~ .toggle span::after{
+        top:0;
+      }
+      .banner-top #butt-1:checked ~ .toggle span::before{
+          top:0;
+      }
+      .copy{
+        color: transparent;
+      }
+      .icons{
+        height: 40px;
+        width: 40px;
+        position: relative;
+        right: 120px;
+      }
+      .icon{
+        visibility:hidden;
+        position: absolute;
+      }
+      .web-footer{
+        width: 100%;
+        height: 150px;
+      }
+
+      *{
+        box-sizing: border-box;
+      }
+
+      .column{
+        float:left;
+        width: 70%;
+        padding: 10px;
+      }
+
+      .row::after{
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .loba{
+        position: relative;
+        display: inline-block;
+        margin-left: 40px;
+        width: 430px;
+        height:500px;
+        padding: 20px;
+
+
+      }
+
+      .loba-top{
+        display:none;
+        position: absolute;
+        width: 430px;
+        height:500px;
+        padding: 20px;
+        top: 106px;
+        left: 50px;;
+        z-index: 99;
+        transition: ease-out;
+      }
+
+      .column:hover .loba-top{
+        display: inline;
+      }
+
+      .ash{
+        margin-left: 40px;
+        width: 430px;
+        height:500px;
+        padding: 20px;
+      }
+
+      .ash-top{
+        display:none;
+        position: absolute;
+        width: 430px;
+        height:500px;
+        padding: 20px;
+        top: 634px;
+        left: 50px;
+        z-index: 99;
+        transition: ease;
+      }
+
+      .column:hover .ash-top{
+        display: inline;
+      }
+
+      .wraith{
+        margin-left: 40px;
+        width: 430px;
+        height:500px;
+        padding: 20px;
+      }
+
+      .wraith-top{
+        display:none;
+        position: absolute;
+        width: 430px;
+        height:500px;
+        padding: 20px;
+        top: 1160px;
+        left: 50px;
+        z-index: 99;
+        transition: ease;
+      }
+
+      .column:hover .wraith-top{
+        display: inline;
+      }
+
+      .pathfinder{
+        margin-left: 40px;
+        width: 430px;
+        height:500px;
+        padding: 20px;
+      }
+
+      .pathfinder-top{
+        display:none;
+        position: absolute;
+        width: 430px;
+        height:500px;
+        padding: 20px;
+        top: 1688px;
+        left: 50px;;
+        z-index: 99;
+        transition: ease-in;
+        transition-delay: 300ms;
+      }
+
+      .column:hover .pathfinder-top{
+        display: inline;
+      }
+
+      .lifeline{
+        margin-left: 40px;
+        width: 430px;
+        height:500px;
+        padding: 20px;
+      }
+
+      .lifeline-top{
+        display:none;
+        position: absolute;
+        width: 430px;
+        height:500px;
+        padding: 20px;
+        top: 2744px;
+        left: 50px;
+        z-index: 99;
+        transition: ease;
+      }
+
+      .column:hover .lifeline-top{
+        display: inline;
+      }
+
+      .crypto{
+        margin-left: 40px;
+        width: 430px;
+        height:500px;
+        padding: 20px;
+      }
+
+      .crypto-top{
+        display:none;
+        position: absolute;
+        width: 430px;
+        height:500px;
+        padding: 20px;
+        top: 2216px;
+        left: 50px;
+        z-index: 99;
+        transition: ease;
+      }
+
+      .column:hover .crypto-top{
+        display: inline;
+      }
+
+  }
